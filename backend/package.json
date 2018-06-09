@@ -1,0 +1,19 @@
+{
+  "name": "hasbisevinc",
+  "version": "1.0.0",
+  "description": "hasbisevinc.com backend",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "hasbi sevinc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^2.2.35"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

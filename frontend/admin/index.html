@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<div class="w3-container">
+  <h2>Admin Panel</h2>
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openPage(event, 'add');" id="first_tab">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Add New Stone</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openPage(event, 'list');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">List Stones</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openPage(event, 'settings');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Settings</div>
+    </a>
+  </div>
+
+  <div id="add" class="w3-container tab" style="display:none">
+    <h2>Add New Stone</h2>
+    <div class="container">
+        <label for="tile">Title</label>
+        <input type="text" id="add_title" placeholder="Text Title">
+    
+        <label for="color">Color</label>
+        <select id="add_color">
+            <option value="#c0392b">Red</option>
+            <option value="#75ce66" selected>Green</option>
+            <option value="#2980b9">Blue</option>
+            <option value="#f1c40f">Yellow</option>
+            <option value="#8e44ad">Purple</option>
+            <option value="#2c3e50">Gray</option>
+            <option value="##e67e22">Orange</option>
+        </select>
+        
+        <label for="date">Date</label>
+        <input id="add_date" type="date">
+
+        <label for="icon">Icon</label>
+        <div style="background-color: #2c3e50">
+            
+          <label>
+              <input type="radio" checked="checked" name="add_icon" value="img/check.svg" />
+              <img height="50px" src="../img/check.svg">
+          </label>
+
+          <label>
+              <input type="radio" name="add_icon" value="img/android.svg" />
+              <img height="50px" src="../img/android.svg">
+          </label>
+
+          <label>
+              <input type="radio" name="add_icon" value="img/bolt.svg" />
+              <img height="50px" src="../img/bolt.svg">
+          </label>
+
+          <label>
+              <input type="radio" name="add_icon" value="img/black-tie.svg" />
+              <img height="50px" src="../img/black-tie.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/blind.svg" />
+              <img height="50px" src="../img/blind.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/book.svg" />
+              <img height="50px" src="../img/book.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/bullhorn.svg" />
+              <img height="50px" src="../img/bullhorn.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/calendar-check-o.svg" />
+              <img height="50px" src="../img/calendar-check-o.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/chain.svg" />
+              <img height="50px" src="../img/chain.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/code.svg" />
+              <img height="50px" src="../img/code.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/compass.svg" />
+              <img height="50px" src="../img/compass.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/film.svg" />
+              <img height="50px" src="../img/film.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/graduation-cap.svg" />
+              <img height="50px" src="../img/graduation-cap.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/lightbulb-o.svg" />
+              <img height="50px" src="../img/lightbulb-o.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/location-arrow.svg" />
+              <img height="50px" src="../img/location-arrow.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/magic.svg" />
+              <img height="50px" src="../img/magic.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/microchip.svg" />
+              <img height="50px" src="../img/microchip.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/playbolt.svg" />
+              <img height="50px" src="../img/play.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/product-hunt.svg" />
+              <img height="50px" src="../img/product-hunt.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/space-shuttle.svg" />
+              <img height="50px" src="../img/space-shuttle.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/star.svg" />
+              <img height="50px" src="../img/star.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/trophy.svg" />
+              <img height="50px" src="../img/trophy.svg">
+          </label>
+          
+          <label>
+              <input type="radio" name="add_icon" value="img/video-camera.svg" />
+              <img height="50px" src="../img/video-camera.svg">
+          </label>
+        </div>
+
+        <br>
+
+        <label for="milestone">Is it a milestone?</label><br>
+        <input type="checkbox" id="add_milestone"><br><br>
+
+        <label for="shortBody">Abstract</label>
+        <textarea id="add_shortBody" placeholder="short text"></textarea>
+    
+        <label for="text">Text</label>
+        <textarea id="add_body" placeholder="long text" style="height:200px"></textarea>
+    
+        <input onclick="add()" type="submit" value="Submit">
+      </div>
+  </div>
+
+  <div id="list" class="w3-container tab" style="display:none">
+    <h2>List Stones</h2>
+    <img height="100px" id="loading" src="loading.gif">
+    <table id="stone_list">
+      <tr>
+        <th>Title</th>
+        <th>Time</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+  </div>
+
+  <div id="settings" class="w3-container tab" style="display:none">
+    <h2>Settings</h2>
+    <div class="container">
+        <label for="Username">Username</label>
+        <input type="text" id="settings_username">
+        
+        <label for="oldpass">Old Password</label>
+        <input type="text" id="settings_old_passowrd">
+        
+        <label for="newpass">New password</label>
+        <input type="text" id="settings_new_password">
+        
+        <label for="renewpass">Write new password again</label>
+        <input type="text" id="settings_re_new_password">
+    
+        <input onclick="saveSettings()" type="submit" value="Submit">
+      </div>
+  </div>
+  </div>
+</div>
+
+<script>
+function openPage(evt, tabName) {
+  if (tabName === "list") {
+    getStones();
+  }
+
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+document.getElementById("first_tab").click();
+</script>
+
+<script src="js/session.js"></script>
+<script src="js/control.js"></script>
+<script src="js/add.js"></script>
+<script src="js/list.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>
