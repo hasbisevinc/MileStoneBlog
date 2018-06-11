@@ -35,7 +35,11 @@ Now, you will have backend and frontend folders. Backend contains our api functi
 ### 4)Upload Backend Files Into Your Server
 - Upload backend files into your server. Go to root directory of backend (/MileStoneBlog/backend)
 - Start backend script
-> npm start
+- install np2 (to run backend server in the background as a service)
+> npm install -g pm2
+- start server
+> cd MileStoneBlog/backend/
+pm2 start server.js
 
 ### 5)Upload Frontend Files Into Your Server
 - Upload frontend files via FTP
