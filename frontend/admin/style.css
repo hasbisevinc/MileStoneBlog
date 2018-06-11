@@ -12,7 +12,7 @@ label > input{ /* HIDE RADIO */
     border:2px solid #f00;
   }
   
-input[type=text],input[type=date], select, textarea {
+input[type=text], input[type=date], input[type=password], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
