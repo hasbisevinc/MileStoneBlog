@@ -1,3 +1,4 @@
+"use strict";
 class Session extends Map {
     set(id, value) {
         if (typeof value === 'object') value = JSON.stringify(value);

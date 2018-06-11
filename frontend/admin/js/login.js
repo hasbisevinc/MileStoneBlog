@@ -24,7 +24,7 @@ var tryToLogin = function() {
     }
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:8000/login");
+    xmlhttp.open("POST", API_URL+"login");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(data));
 

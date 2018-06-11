@@ -26,7 +26,7 @@ var getStones = function() {
     }
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:8000/allItems");
+    xmlhttp.open("POST", API_URL+"allItems");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(data));
 
@@ -54,7 +54,7 @@ var removeStone = function(btn, stoneId) {
     }
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:8000/remove");
+    xmlhttp.open("POST", API_URL+"remove");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(data));
 

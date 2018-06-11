@@ -22,7 +22,7 @@ var saveSettings = function() {
     }
     
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:8000/saveSettings");
+    xmlhttp.open("POST", API_URL+"saveSettings");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(data));
 

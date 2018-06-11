@@ -1,3 +1,4 @@
+"use strict";
 var add = function() {
     let title = document.getElementById("add_title").value;
     let color = document.getElementById("add_color").value;
@@ -41,7 +42,7 @@ var add = function() {
     }
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:8000/add");
+    xmlhttp.open("POST", API_URL+"add");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(data));
 

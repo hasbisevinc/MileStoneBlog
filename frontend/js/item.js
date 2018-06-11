@@ -1,13 +1,13 @@
 var getStone = function() {
-    var url = new URL(window.location);
-    var itemId = url.searchParams.get("id");
+    var itemId = findGetParameter("id");
     if (itemId.length < 1) {
         notFound();
         return;
     }
 
     var xmlhttp = new XMLHttpRequest();
-    var url = "http://localhost:8000/item/"+itemId;
+    var url = API_URL+itemId;
+    console.log(url);
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -25,6 +25,17 @@ var getStone = function() {
     };
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
+}
+
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
 }
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
