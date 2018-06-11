@@ -6,7 +6,7 @@ var getStone = function() {
     }
 
     var xmlhttp = new XMLHttpRequest();
-    var url = API_URL+itemId;
+    var url = API_URL+"item/"+itemId;
     console.log(url);
 
     xmlhttp.onreadystatechange = function() {
