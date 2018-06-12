@@ -7,7 +7,7 @@ Live demo: [Hasbi Sevinç](http://www.hasbisevinc.com)
 ### 1) Installing MongoDB
 If you have a mongodb running on your server, you can skip this section.
 To install mongoDB into centos: https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-centos-7
-### 2) Clonning/Downloading Project
+### 2) Cloning/Downloading Project
 > git clone https://github.com/hasbisevinc/MileStoneBlog.git
 
 or download it with **Download** button on github page.
@@ -51,3 +51,24 @@ pm2 start server.js
 > username:admin
 > password:admin
 - Go to settings tab and change your password!!!
+
+# Technologies
+- Thanks to [Vertical Timeline project of CodyHouse](https://github.com/CodyHouse/vertical-timeline)
+- Icon Set [Font Awesome](https://github.com/encharm/Font-Awesome-SVG-PNG/tree/master/white/svg)
+- Backend has been developed with NodeJS and frontend has been developed with pure JS
+
+# Future Works & Limitations
+- We cannot set title (person name), subtitle and other basic information (yet)
+- We should implement a text editor to long text (enabling HTML tags)
+- We should hide "read more" button if there is no long body text
+
+# Troubleshooting
+## Cannot Connecting Backend
+- Make sure your firewall not blocking the backend. To allow 8000 port:
+> iptables -A INPUT -m state --state NEW -p tcp --dport 8000 -j ACCEPT
+- Make sure your cross-origin settings allow connection
+- Make sure mangoDB url is right
+## Cannot Connecting Frontend
+- Make sure you upload frontend files to right directory via FTP
+## Others
+- Please open a bug on Github
