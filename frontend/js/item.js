@@ -42,10 +42,9 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November", "December"
 ];
 
-var unixtToDate = function(unixTime) {
-    var date = new Date(unixTime*1000);
-    formattedDate = date.getDay() + " " + monthNames[date.getMonth()] + " " + date.getFullYear(); 
-    return formattedDate;
+function unixtToDate(unixTimeStamp) {
+    var date = new Date(unixTimeStamp* 1000);
+    return ('0' + date.getDate()).slice(-2) + ' ' +  monthNames[(date.getMonth())] + ' ' + date.getFullYear();
 }
 
 var fillStone = function(stone) {

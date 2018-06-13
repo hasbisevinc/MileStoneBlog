@@ -1,1 +1,1 @@
-var API_URL = "http://188.166.29.56:8000/"
+var API_URL = "API_URL_HERE"
